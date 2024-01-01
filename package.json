@@ -5,9 +5,10 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "start":"node server.js",
     "client": "npm run dev --prefix ./client",
     "server": "nodemon server.js",
-    "start": "concurrently \"npm run client\" \"npm run server\""
+    "start": "concurrently \"npm run client\" \"npm run start\""
   },
   "author": "Aryan Tyagi",
   "license": "ISC",
