@@ -7,8 +7,12 @@ import cors from "cors"
 import catagoryRouter from "./routes/catagoryRoute.js"
 import productRouter from "./routes/productRoute.js"
 import path from "path"
+import {fileURLToPath} from "url"
 dotenv.config()
 
+
+const __filename = fileURLToPath(impport.meta.url)
+const __dirname = path.dirname(__filename)
 
 //database config
 connectDB()
