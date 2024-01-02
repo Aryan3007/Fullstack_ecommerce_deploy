@@ -11,7 +11,7 @@ import {fileURLToPath} from "url"
 dotenv.config()
 
 
-const __filename = fileURLToPath(impport.meta.url)
+const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 //database config
